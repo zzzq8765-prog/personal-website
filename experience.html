@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Experience | Qian Zhang</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#f5f3ee",
+            "surface-dim": "#dbdad5",
+            "surface-bright": "#fbf9f4",
+            "on-secondary-container": "#476773",
+            "tertiary-fixed-dim": "#ffb2ba",
+            "on-tertiary": "#ffffff",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f4",
+            "surface-container-lowest": "#ffffff",
+            "secondary-fixed": "#c6e8f6",
+            "surface-container-high": "#eae8e3",
+            "surface": "#fbf9f4",
+            "on-error-container": "#93000a",
+            "inverse-surface": "#30312e",
+            "on-secondary-fixed": "#001f28",
+            "inverse-primary": "#abd0a9",
+            "primary-container": "#5b7d5b",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#c6edc4",
+            "on-background": "#1b1c19",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f2f1ec",
+            "surface-container-highest": "#e4e2dd",
+            "surface-variant": "#e4e2dd",
+            "on-tertiary-container": "#fffbff",
+            "on-tertiary-fixed-variant": "#8b1433",
+            "secondary": "#43636f",
+            "on-secondary": "#ffffff",
+            "primary": "#436444",
+            "outline-variant": "#c2c8be",
+            "on-secondary-fixed-variant": "#2a4b57",
+            "secondary-fixed-dim": "#aaccda",
+            "secondary-container": "#c3e5f3",
+            "surface-container": "#f0eee9",
+            "on-surface-variant": "#424841",
+            "tertiary-container": "#c9465e",
+            "surface-tint": "#456646",
+            "on-error": "#ffffff",
+            "tertiary": "#a82d47",
+            "primary-fixed-dim": "#abd0a9",
+            "on-primary-container": "#f7fff2",
+            "tertiary-fixed": "#ffd9dc",
+            "on-primary-fixed-variant": "#2e4e30",
+            "on-primary-fixed": "#012108",
+            "outline": "#737970",
+            "on-tertiary-fixed": "#400011",
+            "on-surface": "#1b1c19"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "stack-md": "24px",
+            "gutter": "24px",
+            "container-max": "1120px",
+            "stack-lg": "48px",
+            "section-padding": "80px",
+            "stack-sm": "12px",
+            "base": "8px"
+          },
+          fontFamily: {
+            h2: ["Noto Serif"],
+            h1: ["Noto Serif"],
+            "label-caps": ["Manrope"],
+            "body-md": ["Manrope"],
+            h3: ["Noto Serif"],
+            "body-lg": ["Manrope"]
+          },
+          fontSize: {
+            h2: ["36px", { lineHeight: "1.3", fontWeight: "500" }],
+            h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "700" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            h3: ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .timeline-line {
+      background: linear-gradient(to bottom, #5b7d5b 0%, #c3e5f3 100%);
+    }
+
+    .tonal-card-shadow {
+      box-shadow: 0px 10px 30px rgba(107, 142, 107, 0.08);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed font-body-md antialiased">
+
+  <!-- Unified Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F9F8] border-b border-stone-200 shadow-sm w-full">
+    <div class="flex justify-between items-center max-w-[1120px] mx-auto px-8 h-20 w-full">
+
+      <a href="index.html" class="text-2xl font-serif font-semibold text-[#6B8E6B]">
+        Qian Zhang
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10">
+        <a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="index.html">
+          Home
+        </a>
+
+        <a class="text-[#6B8E6B] border-b-2 border-[#6B8E6B] pb-1 font-semibold font-serif text-lg tracking-tight" href="experience.html">
+          Experience
+        </a>
+
+        <a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="projects.html">
+          Projects
+        </a>
+
+        <a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="contact.html">
+          Contact
+        </a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#6B8E6B] text-white px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#5B7D5B] transition-all active:scale-95 duration-150">
+        Get in touch
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-32">
+
+    <!-- Hero Section -->
+    <section class="max-w-[1120px] mx-auto px-8 mb-20 text-center">
+      <span class="font-label-caps text-primary mb-4 block">
+        Evolution &amp; Growth
+      </span>
+
+      <h1 class="font-h1 text-h1 text-on-surface mb-6">
+        Experience
+      </h1>
+
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        From clinical care and neuroscience research to pharmaceutical market access, MedTech entrepreneurship, and healthcare innovation.
+      </p>
+
+      <div class="mt-12 h-px w-32 bg-secondary/20 mx-auto"></div>
+    </section>
+
+    <!-- Summary Cards -->
+    <section class="max-w-[1120px] mx-auto px-8 mb-20">
+      <div class="grid md:grid-cols-3 gap-gutter">
+
+        <div class="bg-white p-8 rounded-[28px] tonal-card-shadow">
+          <span class="material-symbols-outlined text-primary text-4xl mb-4 block">medical_services</span>
+          <h3 class="font-h3 text-h3 mb-3">Healthcare Foundation</h3>
+          <p class="font-body-md text-on-surface-variant">
+            Built through frontline clinical care, patient communication, and direct understanding of real healthcare needs.
+          </p>
+        </div>
+
+        <div class="bg-primary-fixed p-8 rounded-[28px]">
+          <span class="material-symbols-outlined text-on-primary-fixed-variant text-4xl mb-4 block">analytics</span>
+          <h3 class="font-h3 text-h3 mb-3">Data &amp; Research</h3>
+          <p class="font-body-md text-on-primary-fixed-variant">
+            Strengthened through neuroscience research, scientific analysis, data visualization, and evidence-based thinking.
+          </p>
+        </div>
+
+        <div class="bg-secondary-container p-8 rounded-[28px]">
+          <span class="material-symbols-outlined text-on-secondary-container text-4xl mb-4 block">public</span>
+          <h3 class="font-h3 text-h3 mb-3">Strategy &amp; Innovation</h3>
+          <p class="font-body-md text-on-secondary-container">
+            Developed through market access, pricing strategy, MedTech exploration, and product-oriented healthcare projects.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Narrative Timeline Section -->
+    <section class="max-w-[1120px] mx-auto px-8 relative">
+
+      <!-- Continuous Timeline Line -->
+      <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 timeline-line hidden md:block"></div>
+
+      <div class="space-y-section-padding">
+
+        <!-- Stage 1 -->
+        <div class="relative flex flex-col md:flex-row items-center gap-12 group">
+          <div class="flex-1 md:text-right">
+            <div class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-label-caps mb-4">
+              The Foundation
+            </div>
+
+            <h3 class="font-h3 text-h3 text-on-surface mb-4">
+              Clinical Care &amp; Patient Needs
+            </h3>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              My journey began in clinical care, where I worked directly with patients and developed a deep understanding of real healthcare needs. This experience taught me that healthcare innovation should always start from people: their pain points, emotions, and lived experiences.
+            </p>
+          </div>
+
+          <div class="relative z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white shadow-lg border-4 border-background">
+            <span class="material-symbols-outlined">clinical_notes</span>
+          </div>
+
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+              <img
+                alt="Clinical healthcare setting"
+                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjHCSpdtXSZFyOUj-XRjt07-rGqx9GRmm69FhXKrcDXfYLg_IHj7SSK-XxW4bLWMxn0VjlPw8ec9D-QmGcstC8YZGyW6tvGL6gzxDWExy7c6XHFsSFxzIUz12dqNlT_uFUdXbc4BQaW4-zqgiwNP3fOVBMxIK9vYwoaM_0mF5wjzy8c9xV3E-1uM_tXV-fm7PVni1ksAk5hS7u86_MDr3QinalnKTTu0J2YImmc-Graz_TWOh-B1WXPBvZBy2hVuQvR7CeXAUN60UE"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center gap-12 group">
+          <div class="flex-1 md:text-left">
+            <div class="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary font-label-caps mb-4">
+              Analytical Rigor
+            </div>
+
+            <h3 class="font-h3 text-h3 text-on-surface mb-4">
+              Research &amp; Scientific Thinking
+            </h3>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              I later moved into neuroscience research, working with scientific data, statistical analysis, and data visualization. This experience strengthened my analytical mindset and helped me transform complex medical information into clear, evidence-based insights.
+            </p>
+          </div>
+
+          <div class="relative z-10 w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white shadow-lg border-4 border-background">
+            <span class="material-symbols-outlined">psychology</span>
+          </div>
+
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+              <img
+                alt="Scientific research lab"
+                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJr1hwUiaC6GiUKV9prVlxfyis9HRxFbKe1MT07lfpNHgifcC8kYPGrPkIGk4HNXBmZJtaAGqOXKMkht2aEJbSfBQgshpVGiCZ5DGnzI-h9v-0rBvTHzGRMKyQ9FvoKprOBphHUEtKnCxWKxZq91Cqzi9VRXutxSibHL1vaDkxsfMPZUxaINMBroZjI5kRtJDB-IgAA2N9DUJo2WVC_zJ3ZYLFWivVzqp0jyGlqO8bTIWF3ZpYIZlyH2JSFaKs6Mmyc1Y1r76TV0Q0"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="relative flex flex-col md:flex-row items-center gap-12 group">
+          <div class="flex-1 md:text-right">
+            <div class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-label-caps mb-4">
+              Strategic Alignment
+            </div>
+
+            <h3 class="font-h3 text-h3 text-on-surface mb-4">
+              Healthcare Projects &amp; Pharma Clients
+            </h3>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              I then contributed to healthcare projects for pharmaceutical clients, combining market analysis, project coordination, performance follow-up, and strategic presentation materials. This stage helped me connect healthcare expertise with business decision-making.
+            </p>
+          </div>
+
+          <div class="relative z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white shadow-lg border-4 border-background">
+            <span class="material-symbols-outlined">query_stats</span>
+          </div>
+
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+              <img
+                alt="Healthcare project and strategy"
+                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuLvOvCKrAAxx4lUDXi4nOi5v17nqIRov3GYhLqRDs1U0mIrGt3LxUq4FjbV4ZGaQa9IVlHsSL7awRpYinnKZfgOUw0kleyTvKSe-AAme8V9n8Nd4LOYDjhJP4JfLuZue-BhdwIQ1VcZm6egBFq0tmP3-6x7EqA82DfQnyA4-hzOm14IXOpiDgmtAE2R1lSBKxTp3zqUWp9oJGHKhUZ68SyXdkLHSw197LZ8QJ8T5Wk0c2bDP2rdXB0zsr2HTH0YwkGB6i8SDGhecx"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="relative flex flex-col md:flex-row-reverse items-center gap-12 group">
+          <div class="flex-1 md:text-left">
+            <div class="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary font-label-caps mb-4">
+              Global Scale
+            </div>
+
+            <h3 class="font-h3 text-h3 text-on-surface mb-4">
+              Market Access at Pfizer
+            </h3>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              At Pfizer, I worked in international market access and pricing strategy, focusing on post-LOE products. I contributed to pricing analysis, market benchmarking, revenue-risk identification, and strategic insights for international healthcare markets.
+            </p>
+          </div>
+
+          <div class="relative z-10 w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white shadow-lg border-4 border-background">
+            <span class="material-symbols-outlined">public</span>
+          </div>
+
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+              <img
+                alt="Modern pharmaceutical strategy"
+                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuAHd6yXIk6oyHp9wpzhaMxxjFALohZJufSItY2Ia5Mdr7I6yVE9aWSmwghNyM-fPJLXIoiJ4jcVtmddHeYOy-oBjEDXGUEoj5mUEHGDyxyfmpS_4ePpTe5QZ3BMG0xsJCIt97cyfKP6BsT5gTEDTb1snmpN50e3U48Rp1lry3r5B92EiIZNWN4SCTjUjUn2Bay6VDG85oaW9xteHoNCMX52mktiuu1kjDq_qZniQHQ6pnsZ3L1_urgxzCiU1PmBemKCkKtV7PPN38"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="relative flex flex-col md:flex-row items-center gap-12 group">
+          <div class="flex-1 md:text-right">
+            <div class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-label-caps mb-4">
+              Current Venture
+            </div>
+
+            <h3 class="font-h3 text-h3 text-on-surface mb-4">
+              MedTech Entrepreneurship
+            </h3>
+
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Today, I am developing a MedTech entrepreneurial project focused on medical devices and mobility assistance solutions in France. My work includes market research, competitor analysis, pricing assessment, CE-marking considerations, and business partner identification.
+            </p>
+          </div>
+
+          <div class="relative z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white shadow-lg border-4 border-background">
+            <span class="material-symbols-outlined">rocket_launch</span>
+          </div>
+
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] rounded-xl overflow-hidden shadow-sm">
+              <img
+                alt="MedTech innovation"
+                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD2KVn_6faEPJbdXzFoqDfTOUtKuXnTnR38relnOYSoTHuVv-L-K_WHdto7LEKMKn-4HWN7jP_K0kbH0xw4G1e0f9dtVeJCs3SBIPhyyihniXaDslcRD71deJa_xZplr6FQsXgswj2tFmLZdPKxq0GyG8TJ2rhmkPW-JjlmoVvHMnTTSa-CgZUzti1w-CVJ2Xn-PugS93ynfK4EX94hk_GnvLfnKd63Olx5hmy0ko2S2xmzakqmRjlhc3N5mnaVNl1dCu_5G7hAqSr"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quote Block Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding">
+      <div class="bg-surface-container-low rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-secondary"></div>
+
+        <blockquote class="relative z-10">
+          <p class="font-h2 text-h2 italic text-on-secondary-container max-w-3xl mx-auto mb-8">
+            "My work begins with patients, grows through data, and moves toward products that make healthcare more human."
+          </p>
+
+          <cite class="font-label-caps text-secondary not-italic">
+            — Qian Zhang
+          </cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="max-w-[1120px] mx-auto px-8 pb-section-padding">
+      <div class="bg-[#F2F4F2] rounded-[40px] p-12 md:p-20 text-center border border-stone-200">
+        <h2 class="font-h2 text-h2 text-on-surface mb-4">
+          Interested in my profile?
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+          I am open to opportunities in healthcare strategy, market access, business analysis, product management, digital health, and MedTech innovation.
+        </p>
+
+        <a href="contact.html" class="bg-primary text-on-primary px-stack-lg py-4 rounded-full font-label-caps text-body-md hover:scale-105 transition-transform duration-300 inline-block">
+          Contact Me
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#F2F4F2] py-12 border-t border-stone-200 w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1120px] mx-auto px-8 gap-6 w-full">
+
+      <div class="space-y-4 text-center md:text-left">
+        <div class="font-serif text-xl text-stone-800">
+          Qian Zhang
+        </div>
+
+        <p class="font-serif text-sm italic text-stone-500 max-w-sm">
+          © 2026 Qian Zhang. Bridging healthcare, data, and product thinking.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <a class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="index.html">
+          Home
+        </a>
+
+        <a class="text-[#6B8E6B] font-semibold underline decoration-[#6B8E6B] underline-offset-4" href="experience.html">
+          Experience
+        </a>
+
+        <a class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="projects.html">
+          Projects
+        </a>
+
+        <a class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="contact.html">
+          Contact
+        </a>
+      </div>
+
+      <div class="flex gap-4">
+        <a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary tonal-card-shadow hover:bg-primary hover:text-white transition-all" href="contact.html">
+          <span class="material-symbols-outlined">alternate_email</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

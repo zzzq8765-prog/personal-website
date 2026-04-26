@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Projects | Qian Zhang</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#fbf9f4",
+            surface: "#fbf9f4",
+            "surface-container-low": "#f5f3ee",
+            "surface-container": "#f0eee9",
+            "surface-container-high": "#eae8e3",
+            "surface-bright": "#fbf9f4",
+            primary: "#436444",
+            "primary-container": "#5b7d5b",
+            "primary-fixed": "#c6edc4",
+            secondary: "#43636f",
+            "secondary-container": "#c3e5f3",
+            "on-surface": "#1b1c19",
+            "on-surface-variant": "#424841",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f7fff2",
+            "on-primary-fixed-variant": "#2e4e30",
+            "on-secondary-container": "#476773",
+            "outline-variant": "#c2c8be"
+          },
+          spacing: {
+            "section-padding": "80px",
+            "stack-lg": "48px",
+            "stack-md": "24px",
+            "stack-sm": "12px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          fontFamily: {
+            h1: ["Noto Serif"],
+            h2: ["Noto Serif"],
+            h3: ["Noto Serif"],
+            "body-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-caps": ["Manrope"]
+          },
+          fontSize: {
+            h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
+            h2: ["36px", { lineHeight: "1.3", fontWeight: "500" }],
+            h3: ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "700" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: Manrope, sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .tonal-card-shadow {
+      box-shadow: 0px 10px 30px rgba(107, 142, 107, 0.08);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px -12px rgba(107, 142, 107, 0.22);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased">
+
+  <!-- Unified Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F9F8] border-b border-stone-200 shadow-sm w-full">
+    <div class="flex justify-between items-center max-w-[1120px] mx-auto px-8 h-20 w-full">
+
+      <a href="index.html" class="text-2xl font-serif font-semibold text-[#6B8E6B]">
+        Qian Zhang
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-[#6B8E6B] border-b-2 border-[#6B8E6B] pb-1 font-semibold font-serif text-lg tracking-tight">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Contact
+        </a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#6B8E6B] text-white px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#5B7D5B] transition-all active:scale-95 duration-150">
+        Get in touch
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-32 pb-24 px-8 max-w-[1120px] mx-auto">
+
+    <!-- Header Section -->
+    <section class="mb-20 text-center md:text-left">
+      <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 block">
+        Portfolio
+      </span>
+
+      <h1 class="font-h1 text-h1 text-on-surface mb-6">
+        Projects
+      </h1>
+
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        A selection of healthcare, data, market access, and digital product projects that reflect my interests in strategy, innovation, and human-centered health solutions.
+      </p>
+    </section>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+      <!-- Project 1 -->
+      <div class="md:col-span-8 group">
+        <article class="bg-white rounded-[32px] tonal-card-shadow p-8 h-full flex flex-col md:flex-row gap-8 card-hover transition-all duration-500 border border-stone-100">
+
+          <div class="w-full md:w-1/2 aspect-[4/3] rounded-2xl overflow-hidden shrink-0 bg-surface-container-high">
+            <img
+              alt="Market access strategy project"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4_Azvcq3rIgYXnWHfdtj1uXhGvUhGLC_6k0-jpq8Ly_IbMvA7MztxLU6oO61GZJul4TqxyeDDjUat31MXxlcfk3ChHhnJKUx3p5Z-ozJLYOA-GPsjh7bHd8jW4Axa8wdT79HeRGEP--NlAbKUBxfVo4DJldoUu11VEtgHXKGl0DibBToVsUVdk4KgJMFcvAwnerXauz77wXp1VfYaa4PZAkPpXVOfznAsEeiSSHqK9wuF39xWlceGsGPDLq-FN72TQ0cTp8l_9uB3"
+            />
+          </div>
+
+          <div class="flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-primary">
+                  Market Access
+                </span>
+                <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-primary">
+                  Pricing
+                </span>
+              </div>
+
+              <h2 class="font-h2 text-h2 mb-4">
+                Pharmaceutical Market Access · Pfizer
+              </h2>
+
+              <p class="font-body-md text-on-surface-variant mb-6">
+                International market access and pricing analysis for post-LOE products, including market benchmarking, revenue-risk identification, and strategic synthesis for internal stakeholders.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4 text-primary">
+              <span class="material-symbols-outlined">
+                clinical_notes
+              </span>
+              <span class="text-sm font-semibold">
+                Case study summary
+              </span>
+            </div>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="md:col-span-4 group">
+        <article class="bg-white rounded-[32px] tonal-card-shadow p-8 h-full flex flex-col card-hover transition-all duration-500 border border-stone-100">
+
+          <div class="aspect-square rounded-2xl overflow-hidden mb-6 bg-secondary-container/20">
+            <img
+              alt="FocusGrid ADHD-friendly planner"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjuNxZuW_H9MDv7WuWGemAZHNn5JQwfjxAQ_MY34tWODKw9d1wNLEXR9Y43TqsSj3hTgwBVITAYu70NbzAuJ8SpUFsIXtGFntWuNxCLr2uu0a26oK7j_freQW58RGCpIxlf4fMVGT4pzXHlrVnLcnDCTMl1r5padoQBApGIL6QHT7cb0APdNL01jw7MDH0jk3p1KZ6FLI5QYeBjW9-1P4u6K_iaAk-m0rZig-9ZyRgfvkWBq8oF1MUwguzKmyX2GAt4kspiSNtd1-n"
+            />
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              HTML
+            </span>
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              UX
+            </span>
+          </div>
+
+          <h3 class="font-h3 text-h3 mb-3">
+            FocusGrid · ADHD-Friendly Planner
+          </h3>
+
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">
+            A simple web-based daily planner designed to support focus and reduce cognitive overload through one-hour planning blocks, progress tracking, and a calm interface.
+          </p>
+
+          <span class="flex items-center gap-2 text-primary font-semibold">
+            Digital product project
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+          </span>
+
+        </article>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="md:col-span-12 group">
+        <article class="bg-white rounded-[32px] tonal-card-shadow p-8 card-hover transition-all duration-500 border border-stone-100 flex flex-col md:grid md:grid-cols-2 gap-12 items-center">
+
+          <div class="order-2 md:order-1">
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-primary">
+                MedTech
+              </span>
+              <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-primary">
+                Market Entry
+              </span>
+              <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-primary">
+                Business Development
+              </span>
+            </div>
+
+            <h2 class="font-h1 text-h1 mb-6">
+              MedTech France Market Entry Study
+            </h2>
+
+            <p class="font-body-lg text-on-surface-variant mb-8">
+              A MedTech entrepreneurial project focused on mobility assistance devices and elderly care solutions in France, including competitor analysis, pricing assessment, CE-marking considerations, distribution channels, and partner identification.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div class="p-4 bg-background rounded-2xl border border-stone-200">
+                <span class="block font-h2 text-h2 text-primary mb-1">
+                  3–5
+                </span>
+                <span class="text-xs font-label-caps text-on-surface-variant uppercase">
+                  Candidate SKUs assessed
+                </span>
+              </div>
+
+              <div class="p-4 bg-background rounded-2xl border border-stone-200">
+                <span class="block font-h2 text-h2 text-primary mb-1">
+                  France
+                </span>
+                <span class="text-xs font-label-caps text-on-surface-variant uppercase">
+                  Target market
+                </span>
+              </div>
+            </div>
+
+            <a href="contact.html" class="bg-primary text-on-primary px-8 py-3 rounded-full font-semibold inline-flex items-center gap-2 hover:bg-[#5B7D5B] transition-all">
+              Discuss this project
+              <span class="material-symbols-outlined">
+                open_in_new
+              </span>
+            </a>
+          </div>
+
+          <div class="order-1 md:order-2 w-full h-full min-h-[300px] rounded-2xl overflow-hidden bg-surface-container-high">
+            <img
+              alt="MedTech market entry strategy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB23w2j8nU7VGNW09_bQ9Ked-BQjOboo3-SJfpK7DlkbW-i8eiPIzGA2pIZGY3Zif4uMTcSUSQIBd4xBFGsIAPLCDUlAg8nQnxxQcmguVefVVRQkjKR8YigyH4TkzFOvPV7L06aw1gUp8_cqeuDdsWskYknH11Nq91oephG82c7oHnCn2tOIjh8c6eO8n13ZPhTypN8mq4RUpNrirwX9ADGeIcMI4sdRyPLEgFSzsMD_fWwug5Fmzewxoe1qNnggJ8yQIxUKfWy82Y4"
+            />
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="md:col-span-6 group">
+        <article class="bg-white rounded-[32px] tonal-card-shadow p-8 h-full card-hover transition-all duration-500 border border-stone-100">
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              Digital Health
+            </span>
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              Women’s Health
+            </span>
+          </div>
+
+          <h3 class="font-h2 text-h2 mb-4">
+            PCOS Health App Concept
+          </h3>
+
+          <p class="font-body-md text-on-surface-variant mb-6">
+            A women’s health product concept exploring how digital tools can support PCOS diet management through user needs analysis, market research, health education, and go-to-market thinking.
+          </p>
+
+          <div class="flex items-center gap-3 text-primary font-semibold">
+            <span class="material-symbols-outlined">
+              devices_fold
+            </span>
+            Product concept
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="md:col-span-6 group">
+        <article class="bg-white rounded-[32px] tonal-card-shadow p-8 h-full card-hover transition-all duration-500 border border-stone-100">
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              Data Analysis
+            </span>
+            <span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter text-secondary">
+              Healthcare
+            </span>
+          </div>
+
+          <h3 class="font-h2 text-h2 mb-4">
+            Healthcare Data Analysis Project
+          </h3>
+
+          <p class="font-body-md text-on-surface-variant mb-6">
+            A healthcare data analysis project focused on transforming complex datasets into visual insights through data cleaning, statistical analysis, interpretation, and structured presentation.
+          </p>
+
+          <div class="flex items-center gap-3 text-primary font-semibold">
+            <span class="material-symbols-outlined">
+              analytics
+            </span>
+            Data insight project
+          </div>
+
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Contact CTA -->
+    <section class="mt-24">
+      <div class="bg-[#F2F4F2] rounded-[40px] p-12 md:p-20 text-center border border-stone-200">
+        <h2 class="font-h2 text-h2 text-on-surface mb-4">
+          Interested in my projects?
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+          I am open to discussing opportunities in healthcare strategy, market access, business analysis, product management, digital health, and MedTech innovation.
+        </p>
+
+        <a href="contact.html" class="bg-primary text-on-primary px-8 py-4 rounded-full font-semibold inline-block hover:bg-[#5B7D5B] transition-all">
+          Contact Me
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#F2F4F2] py-12 border-t border-stone-200 w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1120px] mx-auto px-8 gap-6 w-full">
+
+      <div class="space-y-4 text-center md:text-left">
+        <div class="font-serif text-xl text-stone-800">
+          Qian Zhang
+        </div>
+
+        <p class="font-serif text-sm italic text-stone-500 max-w-sm">
+          © 2026 Qian Zhang. Bridging healthcare, data, strategy, and product thinking.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <a href="index.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-[#6B8E6B] font-semibold underline decoration-[#6B8E6B] underline-offset-4">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Contact
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

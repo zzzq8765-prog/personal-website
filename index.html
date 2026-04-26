@@ -1,292 +1,400 @@
 <!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Qian Zhang | Healthcare Strategy Portfolio</title>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-variant": "#e4e2dd",
-                        "surface": "#fbf9f4",
-                        "inverse-surface": "#30312e",
-                        "tertiary-fixed": "#ffd9dc",
-                        "secondary": "#43636f",
-                        "on-surface-variant": "#424841",
-                        "outline-variant": "#c2c8be",
-                        "on-surface": "#1b1c19",
-                        "on-primary": "#ffffff",
-                        "primary-fixed-dim": "#abd0a9",
-                        "surface-bright": "#fbf9f4",
-                        "on-error-container": "#93000a",
-                        "on-primary-container": "#f7fff2",
-                        "surface-container-lowest": "#ffffff",
-                        "background": "#fbf9f4",
-                        "primary-container": "#5b7d5b",
-                        "on-secondary-fixed-variant": "#2a4b57",
-                        "surface-container-high": "#eae8e3",
-                        "inverse-primary": "#abd0a9",
-                        "surface-container-low": "#f5f3ee",
-                        "surface-container-highest": "#e4e2dd",
-                        "tertiary-fixed-dim": "#ffb2ba",
-                        "on-secondary-fixed": "#001f28",
-                        "surface-tint": "#456646",
-                        "surface-dim": "#dbdad5",
-                        "error": "#ba1a1a",
-                        "secondary-fixed-dim": "#aaccda",
-                        "tertiary-container": "#c9465e",
-                        "on-secondary": "#ffffff",
-                        "surface-container": "#f0eee9",
-                        "tertiary": "#a82d47",
-                        "on-tertiary-fixed": "#400011",
-                        "on-tertiary-container": "#fffbff",
-                        "on-primary-fixed-variant": "#2e4e30",
-                        "on-error": "#ffffff",
-                        "secondary-container": "#c3e5f3",
-                        "outline": "#737970",
-                        "primary": "#436444",
-                        "inverse-on-surface": "#f2f1ec",
-                        "on-primary-fixed": "#012108",
-                        "error-container": "#ffdad6",
-                        "secondary-fixed": "#c6e8f6",
-                        "on-background": "#1b1c19",
-                        "on-secondary-container": "#476773",
-                        "on-tertiary-fixed-variant": "#8b1433",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed": "#c6edc4"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1120px",
-                        "stack-md": "24px",
-                        "base": "8px",
-                        "gutter": "24px",
-                        "stack-lg": "48px",
-                        "section-padding": "80px",
-                        "stack-sm": "12px"
-                    },
-                    "fontFamily": {
-                        "h3": ["Noto Serif"],
-                        "body-md": ["Manrope"],
-                        "h2": ["Noto Serif"],
-                        "label-caps": ["Manrope"],
-                        "body-lg": ["Manrope"],
-                        "h1": ["Noto Serif"]
-                    },
-                    "fontSize": {
-                        "h3": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "h2": ["36px", {"lineHeight": "1.3", "fontWeight": "500"}],
-                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}]
-                    }
-                }
-            }
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#fbf9f4",
+            surface: "#fbf9f4",
+            "surface-container-low": "#f5f3ee",
+            "surface-container": "#f0eee9",
+            "surface-container-high": "#eae8e3",
+            "surface-bright": "#fbf9f4",
+            primary: "#436444",
+            "primary-container": "#5b7d5b",
+            "primary-fixed": "#c6edc4",
+            secondary: "#43636f",
+            "secondary-container": "#c3e5f3",
+            "on-surface": "#1b1c19",
+            "on-surface-variant": "#424841",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#2e4e30",
+            "on-secondary-container": "#476773",
+            "outline-variant": "#c2c8be"
+          },
+          spacing: {
+            "section-padding": "80px",
+            "stack-lg": "48px",
+            "stack-md": "24px",
+            "stack-sm": "12px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          fontFamily: {
+            h1: ["Noto Serif"],
+            h2: ["Noto Serif"],
+            h3: ["Noto Serif"],
+            "body-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-caps": ["Manrope"]
+          },
+          fontSize: {
+            h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
+            h2: ["36px", { lineHeight: "1.3", fontWeight: "500" }],
+            h3: ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "700" }]
+          }
         }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .tonal-card-shadow {
-            box-shadow: 0px 10px 30px rgba(107, 142, 107, 0.08);
-        }
-    </style>
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: Manrope, sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .tonal-card-shadow {
+      box-shadow: 0px 10px 30px rgba(107, 142, 107, 0.08);
+    }
+  </style>
 </head>
+
 <body class="bg-background text-on-surface font-body-md antialiased">
-<!-- TopAppBar -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F9F8] border-b border-stone-200 shadow-sm w-full">
-<div class="flex justify-between items-center max-w-[1120px] mx-auto px-8 h-20 w-full">
-<div class="text-2xl font-serif font-semibold text-[#6B8E6B]">Qian Zhang</div>
-<nav class="hidden md:flex items-center gap-stack-lg">
-<a class="text-[#6B8E6B] border-b-2 border-[#6B8E6B] pb-1 font-medium font-serif text-lg tracking-tight" href="#">About</a>
-<a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="#">Work</a>
-<a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="#">Projects</a>
-<a class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight" href="#">Contact</a>
-</nav>
-<button class="bg-[#6B8E6B] text-white px-6 py-2 rounded-full font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container transition-all active:scale-95 duration-150">
-                Get in touch
-            </button>
-</div>
-</header>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="max-w-[1120px] mx-auto px-8 py-section-padding grid md:grid-cols-2 gap-stack-lg items-center">
-<div class="space-y-stack-md">
-<div class="inline-block px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps">
-                    Healthcare · Data · Product
-                </div>
-<h1 class="font-h1 text-h1 text-on-surface">Hi, I’m Qian. I connect healthcare, data, and product thinking.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                    From clinical care in China to pharmaceutical strategy and digital health projects in France, I explore how data and product thinking can improve real-world healthcare.
-                </p>
-<div class="flex gap-stack-sm pt-base">
-<button class="bg-primary text-on-primary px-stack-lg py-4 rounded-xl font-label-caps text-body-md hover:translate-y-[-2px] transition-transform duration-300">
-                        View My Work
-                    </button>
-<button class="border-b-2 border-secondary text-secondary px-stack-lg py-4 font-label-caps text-body-md hover:bg-secondary-container transition-colors duration-300">
-                        Contact Me
-                    </button>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary-fixed-dim rounded-[40px] opacity-20 group-hover:scale-105 transition-transform duration-500"></div>
-<img alt="Qian Zhang" class="relative z-10 w-full aspect-square object-cover rounded-[32px] tonal-card-shadow" data-alt="professional portrait of a young woman with a warm and intelligent expression, soft natural lighting, elegant minimalist studio background" src="https://lh3.googleusercontent.com/aida/ADBb0ujdr_wE49gQsF2l_MxtA8pDdph1vn5kjF27CKRs1wNg3PhYdX9JKFzSuuBoAJofMZaamrASIdUvf8w9rAKewzpoYjKxSEi4TCOZvO4ynWF0pFlrNNhxAZU2dji_Ew12rp6zMhzU4pIUpBGnPUvZzm1C7xlHzbIP_uaaDpQ0ZN2ttMVOeO7X-ed_GLhcFHoDP-I7LVs-GUjG0JBW7tThmfrGTo3PGGV22d5blfzIBczAIY5JbnfQhrGIeiYpYp8LZGgDFCgxGOtspQ"/>
-</div>
-</section>
-<!-- Intro Section -->
-<section class="bg-surface-container-low py-section-padding">
-<div class="max-w-[1120px] mx-auto px-8">
-<div class="max-w-3xl mx-auto text-center space-y-stack-md">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="medical_services">medical_services</span>
-<p class="font-h2 text-h2 italic text-on-surface-variant leading-relaxed">
-                        "I’m a healthcare and data-driven professional with a background in clinical practice, research, and pharmaceutical market access. Today, I focus on bridging healthcare needs with business and product solutions."
-                    </p>
-<p class="font-body-lg text-body-lg text-secondary">
-                        Combining analytical thinking with real-world understanding of patients and systems.
-                    </p>
-</div>
-</div>
-</section>
-<!-- What I Do Section - Bento Grid -->
-<section class="max-w-[1120px] mx-auto px-8 py-section-padding">
-<h2 class="font-h2 text-h2 mb-stack-lg border-b border-outline-variant pb-base">Expertise &amp; Focus</h2>
-<div class="grid md:grid-cols-3 gap-gutter">
-<div class="bg-white p-10 rounded-[32px] tonal-card-shadow flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="strategy">strategy</span>
-<h3 class="font-h3 text-h3">Market Access &amp; Healthcare Strategy</h3>
-<p class="font-body-md text-on-surface-variant">Experience in pharmaceutical market access and understanding how healthcare systems, pricing, and regulations shape access to treatment.</p>
-</div>
-<div class="bg-secondary-container p-10 rounded-[32px] flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
-<span class="material-symbols-outlined text-on-secondary-container text-4xl" data-icon="devices_fold">devices_fold</span>
-<h3 class="font-h3 text-h3">Product &amp; Digital Health</h3>
-<p class="font-body-md text-on-secondary-container">Exploring and building digital health solutions, from identifying user needs to shaping product ideas and features.</p>
-</div>
-<div class="bg-primary-fixed p-10 rounded-[32px] flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
-<span class="material-symbols-outlined text-on-primary-fixed-variant text-4xl" data-icon="analytics">analytics</span>
-<h3 class="font-h3 text-h3">Data &amp; Analysis</h3>
-<p class="font-body-md text-on-primary-fixed-variant">Using data to understand healthcare problems, support decisions, and generate insights for strategy and product development.</p>
-</div>
-</div>
-</section>
-<!-- My Journey -->
-<section class="max-w-[1120px] mx-auto px-8 py-section-padding">
-<div class="bg-surface-container rounded-[40px] p-12 md:p-20 overflow-hidden relative">
-<div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
-<span class="material-symbols-outlined text-[300px]" data-icon="vital_signs">vital_signs</span>
-</div>
-<div class="max-w-2xl relative z-10 space-y-stack-md">
-<h2 class="font-h2 text-h2">My Journey</h2>
-<div class="space-y-stack-md font-body-lg text-on-surface-variant leading-relaxed">
-<p>My career began in the clinical heart of healthcare, working directly with patients in China. This direct exposure taught me the profound impact of medical systems on individual lives.</p>
-<p>Driven to understand the larger mechanics of health, I pivoted to research and then into pharmaceutical strategy with Pfizer. In Market Access, I decoded the complex landscape of international pricing and regulatory frameworks.</p>
-<p>Today, I am navigating the intersection of healthcare, data, and product. I believe that by applying product thinking to clinical needs and data insights, we can build a future of more accessible, efficient, and human-centric care.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Selected Work Section -->
-<section class="max-w-[1120px] mx-auto px-8 py-section-padding">
-<div class="flex justify-between items-end mb-stack-lg">
-<h2 class="font-h2 text-h2">Selected Work</h2>
-<a class="font-label-caps text-primary border-b border-primary pb-1" href="#">View all projects</a>
-</div>
-<div class="grid gap-gutter">
-<!-- Project 1 -->
-<div class="group grid md:grid-cols-2 gap-stack-lg items-center bg-surface-bright rounded-[32px] p-6 hover:bg-white transition-colors duration-500 tonal-card-shadow">
-<div class="aspect-video bg-surface-container-high rounded-2xl overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="abstract architectural shot of a modern glass pharmaceutical headquarters with clean lines and soft daylight reflecting off surfaces" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvQiFQXZwbwK_Lyn4y6GEnRH8vo2riZ9zqTSaw-GSTGxvpVc3-cNoucPBu5hs896zdz6QnhtAF681AA-ucTCP8h-IgZ_m1TOFmxvl_T3ANKzqY8QVhfIeTqWSlkJopJbMEdwKx_91Nl5WrO9cATzlqHViVN0-Php6uJag16wlHFS0GbxqID1CkSMNI3e9x9MFXBGOzwKR3_f8BVpnlaNJLU3dFUE8MM3vzmVH34s8R5GIz5YRMOjJn0mMT6yrgrijL_TbpovI7fWuT')"></div>
-</div>
-<div class="space-y-stack-sm p-4">
-<span class="text-secondary font-label-caps text-label-caps">PHARMACEUTICAL STRATEGY</span>
-<h3 class="font-h3 text-h3">Pharmaceutical Market Access – Pfizer</h3>
-<p class="font-body-md text-on-surface-variant">International strategy, pricing analysis, and market research to optimize patient access to critical therapies across global markets.</p>
-<div class="pt-base flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">Market Analysis</span>
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">Pricing</span>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="group grid md:grid-cols-2 gap-stack-lg items-center bg-surface-bright rounded-[32px] p-6 hover:bg-white transition-colors duration-500 tonal-card-shadow">
-<div class="md:order-last aspect-video bg-surface-container-high rounded-2xl overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="minimalist interface of a health application displayed on a smartphone screen, featuring soft pastel colors and clear typography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYT80Oc45zNg8mEdq9d39vuDHcnhwtKSzYe8aTIzzxRk3f2q1ewsVKXE-wMTOANqjGBJL0kkRyPNIX3QxifYs5bKajsgKdETvyyh8CfJmwYgX1P5_-W9EmWM5vlKFpS_8EkBOAXzOR3kP3AH0FzRt28V7pt2vgEx6VBW9DyXln5bIAUjPunVdaKkjGEaSSqiRuYJoFeiNx9w46EbReJp994vvx209r6orHB809Cvoo50UnnLL6BPPc_CYTBxd6pSMOutD7zThrnWr4')"></div>
-</div>
-<div class="space-y-stack-sm p-4">
-<span class="text-secondary font-label-caps text-label-caps">PRODUCT DESIGN</span>
-<h3 class="font-h3 text-h3">Health App Project (SOPK)</h3>
-<p class="font-body-md text-on-surface-variant">Defining user needs and shaping product positioning for a digital health solution focused on specialized care coordination.</p>
-<div class="pt-base flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">GTM Strategy</span>
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">Product Discovery</span>
-</div>
-</div>
-</div>
-<!-- Project 3 -->
-<div class="group grid md:grid-cols-2 gap-stack-lg items-center bg-surface-bright rounded-[32px] p-6 hover:bg-white transition-colors duration-500 tonal-card-shadow">
-<div class="aspect-video bg-surface-container-high rounded-2xl overflow-hidden">
-<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="serene interior of an elderly care facility with comfortable furniture, natural wood accents, and warm ambient lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcN7K4AP1UK34s-2OvK0r7s3Te17QgU4_JF0rVHBKkItQvPCTie9TbQNax0fPkrXiKagAVeN3vvkvLh4f1JG1Nh2MWmEpdWHhD7dHlQmmuIgQb0VK3f53gYsxxfw3diw1i2qahAhUw_8qaj0gJwkwoaH9iOgYzYuszXQlrVpoHQbYuKfUmy9bIEeEqsFo_krmX2XHqDjVStN0lxG7pBzojWF5K7kdCjVPGffDsO3_Zy0IQuhQAE1hq9nSFZnoneph925DHDoOL5eYl')"></div>
-</div>
-<div class="space-y-stack-sm p-4">
-<span class="text-secondary font-label-caps text-label-caps">INTERNATIONAL RESEARCH</span>
-<h3 class="font-h3 text-h3">China–France Healthcare Research</h3>
-<p class="font-body-md text-on-surface-variant">Comparative analysis of elderly care products and regulatory pathways between the Chinese and French healthcare ecosystems.</p>
-<div class="pt-base flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">Regulatory</span>
-<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-bold uppercase tracking-tighter">Cross-cultural</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="max-w-[1120px] mx-auto px-8 py-section-padding">
-<div class="bg-[#F2F4F2] rounded-[40px] p-12 md:p-24 text-center space-y-stack-md border border-stone-200">
-<h2 class="font-h1 text-h1 text-on-surface">Let’s connect</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
-                    I am always open to new opportunities, collaborations, or simply meaningful conversations about the future of healthcare.
-                </p>
-<div class="pt-stack-md">
-<button class="bg-primary text-on-primary px-stack-lg py-5 rounded-full font-label-caps text-body-md hover:scale-105 transition-transform duration-300">
-                        Contact Me
-                    </button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#F2F4F2] py-12 border-t border-stone-200 w-full">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-[1120px] mx-auto px-8 gap-6 w-full">
-<div class="space-y-4 text-center md:text-left">
-<div class="font-serif text-xl text-stone-800">Qian Zhang</div>
-<p class="font-serif text-sm italic text-stone-500 max-w-sm">© 2024 Qian Zhang. Bridging healthcare, data, and global perspectives with calm competence.</p>
-</div>
-<div class="flex gap-8">
-<a class="text-stone-500 hover:opacity-100 transition-opacity underline decoration-[#6B8E6B] underline-offset-4 text-[#6B8E6B] font-bold" href="#">About</a>
-<a class="text-stone-500 hover:opacity-100 transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="#">Work</a>
-<a class="text-stone-500 hover:opacity-100 transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="#">Projects</a>
-<a class="text-stone-500 hover:opacity-100 transition-opacity underline decoration-[#6B8E6B] underline-offset-4" href="#">Contact</a>
-</div>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary tonal-card-shadow hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="link">link</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary tonal-card-shadow hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
-</a>
-</div>
-</div>
-</footer>
-</body></html>
+
+  <!-- Unified Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F9F8] border-b border-stone-200 shadow-sm w-full">
+    <div class="flex justify-between items-center max-w-[1120px] mx-auto px-8 h-20 w-full">
+
+      <a href="index.html" class="text-2xl font-serif font-semibold text-[#6B8E6B]">
+        Qian Zhang
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="text-[#6B8E6B] border-b-2 border-[#6B8E6B] pb-1 font-semibold font-serif text-lg tracking-tight">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Contact
+        </a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#6B8E6B] text-white px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#5B7D5B] transition-all active:scale-95 duration-150">
+        Get in touch
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Hero Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding grid md:grid-cols-2 gap-stack-lg items-center">
+      <div class="space-y-stack-md">
+
+        <div class="inline-block px-4 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps">
+          Healthcare · Data · Strategy · Product
+        </div>
+
+        <h1 class="font-h1 text-h1 text-on-surface">
+          Hi, I’m Qian. I connect healthcare, data, and product thinking.
+        </h1>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+          From clinical care in China to pharmaceutical strategy and digital health projects in France, I explore how data and product thinking can improve real-world healthcare.
+        </p>
+
+        <div class="flex flex-wrap gap-stack-sm pt-base">
+          <a href="projects.html" class="bg-primary text-on-primary px-stack-lg py-4 rounded-xl font-label-caps text-body-md hover:translate-y-[-2px] transition-transform duration-300 inline-block">
+            View My Work
+          </a>
+
+          <a href="contact.html" class="border-b-2 border-secondary text-secondary px-stack-lg py-4 font-label-caps text-body-md hover:bg-secondary-container transition-colors duration-300 inline-block">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+
+      <div class="relative">
+        <img
+          alt="Qian Zhang"
+          class="relative z-10 w-full aspect-square object-cover rounded-[32px] object-center border border-stone-100"
+          src="photo.jpeg"
+        />
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-surface-container-low py-section-padding">
+      <div class="max-w-[1120px] mx-auto px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-stack-md">
+
+          <span class="material-symbols-outlined text-4xl text-primary">
+            medical_services
+          </span>
+
+          <p class="font-h2 text-h2 italic text-on-surface-variant leading-relaxed">
+            “I’m a healthcare and data-driven professional with a background in clinical practice, research, and pharmaceutical market access. Today, I focus on bridging healthcare needs with business and product solutions.”
+          </p>
+
+          <p class="font-body-lg text-body-lg text-secondary">
+            Combining analytical thinking with real-world understanding of patients and healthcare systems.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding">
+      <h2 class="font-h2 text-h2 mb-stack-lg border-b border-outline-variant pb-base">
+        Expertise &amp; Focus
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-gutter">
+
+        <div class="bg-white p-10 rounded-[32px] tonal-card-shadow flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
+          <span class="material-symbols-outlined text-primary text-4xl">
+            strategy
+          </span>
+
+          <h3 class="font-h3 text-h3">
+            Market Access &amp; Healthcare Strategy
+          </h3>
+
+          <p class="font-body-md text-on-surface-variant">
+            Experience in pharmaceutical market access and understanding how healthcare systems, pricing, and regulations shape access to treatment.
+          </p>
+        </div>
+
+        <div class="bg-secondary-container p-10 rounded-[32px] flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
+          <span class="material-symbols-outlined text-on-secondary-container text-4xl">
+            devices_fold
+          </span>
+
+          <h3 class="font-h3 text-h3">
+            Product &amp; Digital Health
+          </h3>
+
+          <p class="font-body-md text-on-secondary-container">
+            Exploring and building digital health solutions, from identifying user needs to shaping product ideas and features.
+          </p>
+        </div>
+
+        <div class="bg-primary-fixed p-10 rounded-[32px] flex flex-col gap-stack-sm hover:translate-y-[-4px] transition-transform duration-300">
+          <span class="material-symbols-outlined text-on-primary-fixed-variant text-4xl">
+            analytics
+          </span>
+
+          <h3 class="font-h3 text-h3">
+            Data &amp; Analysis
+          </h3>
+
+          <p class="font-body-md text-on-primary-fixed-variant">
+            Using data to understand healthcare problems, support decisions, and generate insights for strategy and product development.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Journey Preview Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding">
+      <div class="bg-white rounded-[40px] p-8 md:p-12 tonal-card-shadow">
+
+        <div class="flex justify-between items-baseline mb-12">
+          <div class="space-y-1">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary opacity-60">
+              Chronicle
+            </span>
+
+            <h2 class="font-h2 text-h2">
+              My Journey
+            </h2>
+          </div>
+
+          <a href="experience.html" class="text-xs font-bold uppercase tracking-widest border-b border-on-surface-variant text-on-surface-variant pb-0.5">
+            Full Journey
+          </a>
+        </div>
+
+        <div class="space-y-12">
+
+          <!-- Phase 1 -->
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="w-full md:w-[40%] aspect-[16/9] rounded-3xl overflow-hidden bg-surface-container-high shrink-0">
+              <div
+                class="w-full h-full bg-cover bg-center"
+                style='background-image: url("https://lh3.googleusercontent.com/aida/ADBb0uh_KnEOeMpOf5ElD4i1yD-kJ5KLS5ESYTbsOKeeAuOoZkMd7St3bI5Dy8IF-nLEGOWM5Kdx72N1mDvQUKYUQ8rQSqKYM-h2B_tbXf5dX5OccC8qz6YGYeZpYrJ_eLDVtnxaHoUBIxcZFc3x01BwouTYDtrOHZqSZewuEsN4ggMUPTE7iK9jeHG62P8_BueboA6dF6teTlvGrz9BUA8UyUaVa9TrDwvYAq3vsho4IunUHiutNlAHh4iBX8yB4u3p_cuh8ihnEYv3is4");'>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <div class="text-sm font-bold text-primary mb-1 uppercase tracking-tighter">
+                2024–Present
+              </div>
+
+              <h3 class="text-2xl font-bold mb-3 font-h3">
+                From Market Access to Health Innovation · France
+              </h3>
+
+              <p class="text-on-surface-variant font-body-md max-w-xl leading-relaxed">
+                Continued my journey in France through international market access at Pfizer and MedTech entrepreneurship. I now focus on pricing strategy, market analysis, product positioning, and building human-centered healthcare solutions across pharma, medical devices, and digital health.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="w-full md:w-[40%] aspect-[16/9] rounded-3xl overflow-hidden bg-surface-container-high shrink-0">
+              <div
+                class="w-full h-full bg-cover bg-center"
+                style='background-image: url("https://lh3.googleusercontent.com/aida/ADBb0uj-o1EJmKd4lO6Pr-8IM-tVnLUdiCO0p6U5Ijdp_9rDRMOB76sawLur3peukFaHdrFchSNzxt2HIlRIdcfJ1jTqMrDiQGq3VJup4jDSomU6ekpCzqDjcXJgJcE__Z8D8gt1LcSLWZAUqdA5eERcIEjjsjXVgqlOuoUXz2ESPwprmBe3xIuXTaPVknRe5bh8lvHVa7-f4DJOM5fyvq838osBi79yNyk--F0APkon5Tn9wXdGoemikFV8heECZ748ZXuhNXP2qC7GLg");'>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <div class="text-sm font-bold text-primary mb-1 uppercase tracking-tighter">
+                2019–2023
+              </div>
+
+              <h3 class="text-2xl font-bold mb-3 font-h3">
+                From Clinical Insight to Healthcare Projects · Shanghai, China
+              </h3>
+
+              <p class="text-on-surface-variant font-body-md max-w-xl leading-relaxed">
+                Started from frontline clinical care and later moved into neuroscience research and healthcare projects for pharmaceutical clients. This journey helped me understand real patient needs, analyze complex medical information, and translate healthcare knowledge into structured project and business insights.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding">
+      <div class="flex justify-between items-end mb-stack-lg">
+        <h2 class="font-h2 text-h2">
+          Selected Work
+        </h2>
+
+        <a href="projects.html" class="font-label-caps text-primary border-b border-primary pb-1">
+          View all projects
+        </a>
+      </div>
+
+      <div class="grid gap-gutter">
+
+        <!-- Project 1 -->
+        <div class="group grid md:grid-cols-2 gap-stack-lg items-center bg-surface-bright rounded-[32px] p-6 hover:bg-white transition-colors duration-500 tonal-card-shadow">
+          <div class="aspect-video bg-surface-container-high rounded-2xl overflow-hidden">
+            <div
+              class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvQiFQXZwbwK_Lyn4y6GEnRH8vo2riZ9zqTSaw-GSTGxvpVc3-cNoucPBu5hs896zdz6QnhtAF681AA-ucTCP8h-IgZ_m1TOFmxvl_T3ANKzqY8QVhfIeTqWSlkJopJbMEdwKx_91Nl5WrO9cATzlqHViVN0-Php6uJag16wlHFS0GbxqID1CkSMNI3e9x9MFXBGOzwKR3_f8BVpnlaNJLU3dFUE8MM3vzmVH34s8R5GIz5YRMOjJn0mMT6yrgrijL_TbpovI7fWuT");'>
+            </div>
+          </div>
+
+          <div class="space-y-stack-sm p-4">
+            <span class="text-secondary font-label-caps text-label-caps">
+              Pharmaceutical Strategy
+            </span>
+
+            <h3 class="font-h3 text-h3">
+              Pharmaceutical Market Access · Pfizer
+            </h3>
+
+            <p class="font-body-md text-on-surface-variant">
+              International strategy, pricing analysis, and market research to support decision-making across global healthcare markets.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="max-w-[1120px] mx-auto px-8 py-section-padding">
+      <div class="bg-[#F2F4F2] rounded-[40px] p-12 md:p-24 text-center space-y-stack-md border border-stone-200">
+        <h2 class="font-h1 text-h1 text-on-surface">
+          Let’s connect
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">
+          I am open to new opportunities, collaborations, and meaningful conversations about healthcare strategy, digital health, product thinking, and MedTech innovation.
+        </p>
+
+        <div class="pt-stack-md">
+          <a href="contact.html" class="bg-primary text-on-primary px-stack-lg py-5 rounded-full font-label-caps text-body-md hover:scale-105 transition-transform duration-300 inline-block">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#F2F4F2] py-12 border-t border-stone-200 w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1120px] mx-auto px-8 gap-6 w-full">
+
+      <div class="space-y-4 text-center md:text-left">
+        <div class="font-serif text-xl text-stone-800">
+          Qian Zhang
+        </div>
+
+        <p class="font-serif text-sm italic text-stone-500 max-w-sm">
+          © 2026 Qian Zhang. Bridging healthcare, data, strategy, and product thinking.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <a href="index.html" class="text-[#6B8E6B] font-semibold underline decoration-[#6B8E6B] underline-offset-4">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Contact
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

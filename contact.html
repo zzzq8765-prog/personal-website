@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact | Qian Zhang</title>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            background: "#fbf9f4",
+            surface: "#fbf9f4",
+            "surface-container-low": "#f5f3ee",
+            "surface-container": "#f0eee9",
+            "surface-container-high": "#eae8e3",
+            "surface-bright": "#fbf9f4",
+            primary: "#436444",
+            "primary-container": "#5b7d5b",
+            "primary-fixed": "#c6edc4",
+            secondary: "#43636f",
+            "secondary-container": "#c3e5f3",
+            "on-surface": "#1b1c19",
+            "on-surface-variant": "#424841",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f7fff2",
+            "on-primary-fixed-variant": "#2e4e30",
+            "on-secondary-container": "#476773",
+            "outline-variant": "#c2c8be"
+          },
+          spacing: {
+            "section-padding": "80px",
+            "stack-lg": "48px",
+            "stack-md": "24px",
+            "stack-sm": "12px",
+            "gutter": "24px",
+            "base": "8px"
+          },
+          fontFamily: {
+            h1: ["Noto Serif"],
+            h2: ["Noto Serif"],
+            h3: ["Noto Serif"],
+            "body-md": ["Manrope"],
+            "body-lg": ["Manrope"],
+            "label-caps": ["Manrope"]
+          },
+          fontSize: {
+            h1: ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "600" }],
+            h2: ["36px", { lineHeight: "1.3", fontWeight: "500" }],
+            h3: ["24px", { lineHeight: "1.4", fontWeight: "500" }],
+            "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "700" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: Manrope, sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .tonal-card-shadow {
+      box-shadow: 0px 10px 30px rgba(107, 142, 107, 0.08);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px -12px rgba(107, 142, 107, 0.22);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased">
+
+  <!-- Unified Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#F8F9F8] border-b border-stone-200 shadow-sm w-full">
+    <div class="flex justify-between items-center max-w-[1120px] mx-auto px-8 h-20 w-full">
+
+      <a href="index.html" class="text-2xl font-serif font-semibold text-[#6B8E6B]">
+        Qian Zhang
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-stone-600 hover:text-[#6B8E6B] transition-colors font-serif text-lg tracking-tight">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-[#6B8E6B] border-b-2 border-[#6B8E6B] pb-1 font-semibold font-serif text-lg tracking-tight">
+          Contact
+        </a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#6B8E6B] text-white px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#5B7D5B] transition-all active:scale-95 duration-150">
+        Get in touch
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-32 pb-24 px-8 max-w-[1120px] mx-auto">
+
+    <!-- Header Section -->
+    <section class="mb-16 text-center md:text-left">
+      <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 block">
+        Get in touch
+      </span>
+
+      <h1 class="font-h1 text-h1 text-on-surface mb-6">
+        Let’s connect
+      </h1>
+
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        If you are interested in my profile, projects, or potential opportunities in healthcare strategy, market access, digital health, product management, or MedTech innovation, feel free to contact me directly.
+      </p>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="grid md:grid-cols-3 gap-8 mb-20">
+
+      <!-- Email -->
+      <article class="bg-white rounded-[32px] p-8 tonal-card-shadow border border-stone-100 card-hover transition-all duration-500">
+        <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-6">
+          <span class="material-symbols-outlined">
+            alternate_email
+          </span>
+        </div>
+
+        <h2 class="font-h3 text-h3 mb-3">
+          Email
+        </h2>
+
+        <p class="font-body-md text-on-surface-variant mb-6 break-all">
+          qianzhangfrance@outlook.com
+        </p>
+
+        <a href="mailto:qianzhangfrance@outlook.com" class="inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-full font-semibold hover:bg-[#5B7D5B] transition-all">
+          Email Me
+          <span class="material-symbols-outlined text-sm">
+            arrow_forward
+          </span>
+        </a>
+      </article>
+
+      <!-- WhatsApp -->
+      <article class="bg-white rounded-[32px] p-8 tonal-card-shadow border border-stone-100 card-hover transition-all duration-500">
+        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-6">
+          <span class="material-symbols-outlined">
+            chat
+          </span>
+        </div>
+
+        <h2 class="font-h3 text-h3 mb-3">
+          Phone / WhatsApp
+        </h2>
+
+        <p class="font-body-md text-on-surface-variant mb-6">
+          +33 7 44 76 98 35
+        </p>
+
+        <a href="https://wa.me/33744769835" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-3 rounded-full font-semibold hover:bg-[#5B7D5B] transition-all">
+          Message Me
+          <span class="material-symbols-outlined text-sm">
+            arrow_forward
+          </span>
+        </a>
+      </article>
+
+      <!-- Location -->
+      <article class="bg-white rounded-[32px] p-8 tonal-card-shadow border border-stone-100 card-hover transition-all duration-500">
+        <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-6">
+          <span class="material-symbols-outlined">
+            location_on
+          </span>
+        </div>
+
+        <h2 class="font-h3 text-h3 mb-3">
+          Current Base
+        </h2>
+
+        <p class="font-body-md text-on-surface-variant mb-6">
+          Lille, France
+        </p>
+
+        <p class="font-body-md text-on-surface-variant">
+          Open to opportunities in France and internationally.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- Professional Info -->
+    <section class="grid md:grid-cols-2 gap-8 mb-20">
+
+      <!-- Professional Network -->
+      <article class="bg-[#F2F4F2] rounded-[32px] p-8 border border-stone-200">
+        <div class="flex items-start gap-5">
+          <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined">
+              share
+            </span>
+          </div>
+
+          <div>
+            <h2 class="font-h3 text-h3 mb-3">
+              Professional Network
+            </h2>
+
+            <p class="font-body-md text-on-surface-variant mb-4">
+              You can also connect with me through LinkedIn for professional opportunities, networking, or project discussions.
+            </p>
+
+            <a href="#" class="text-primary font-semibold underline underline-offset-4">
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Response Time -->
+      <article class="bg-[#F2F4F2] rounded-[32px] p-8 border border-stone-200">
+        <div class="flex items-start gap-5">
+          <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary shrink-0">
+            <span class="material-symbols-outlined">
+              schedule
+            </span>
+          </div>
+
+          <div>
+            <h2 class="font-h3 text-h3 mb-3">
+              Response Time
+            </h2>
+
+            <p class="font-body-md text-on-surface-variant">
+              I usually respond within 24–48 business hours.
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CTA Block -->
+    <section>
+      <div class="bg-white rounded-[40px] p-12 md:p-20 text-center tonal-card-shadow border border-stone-100">
+        <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 block">
+          Contact
+        </span>
+
+        <h2 class="font-h2 text-h2 text-on-surface mb-6">
+          Open to healthcare, strategy, product, and digital health opportunities
+        </h2>
+
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+          I am especially interested in roles that connect medical knowledge, data analysis, market understanding, and product thinking.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:qianzhangfrance@outlook.com" class="bg-primary text-on-primary px-8 py-4 rounded-full font-semibold hover:bg-[#5B7D5B] transition-all">
+            Email Me
+          </a>
+
+          <a href="projects.html" class="border border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white transition-all">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#F2F4F2] py-12 border-t border-stone-200 w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-[1120px] mx-auto px-8 gap-6 w-full">
+
+      <div class="space-y-4 text-center md:text-left">
+        <div class="font-serif text-xl text-stone-800">
+          Qian Zhang
+        </div>
+
+        <p class="font-serif text-sm italic text-stone-500 max-w-sm">
+          © 2026 Qian Zhang. Bridging healthcare, data, strategy, and product thinking.
+        </p>
+      </div>
+
+      <div class="flex gap-8">
+        <a href="index.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Home
+        </a>
+
+        <a href="experience.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Experience
+        </a>
+
+        <a href="projects.html" class="text-stone-500 hover:text-[#6B8E6B] transition-opacity underline decoration-[#6B8E6B] underline-offset-4">
+          Projects
+        </a>
+
+        <a href="contact.html" class="text-[#6B8E6B] font-semibold underline decoration-[#6B8E6B] underline-offset-4">
+          Contact
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
